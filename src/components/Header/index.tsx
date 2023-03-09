@@ -1,27 +1,27 @@
-
 import { Link, NavLink } from "react-router-dom";
 import "./styles.css";
+import homImg from '../../img/hom.svg';
 
 export default function Header() {
-
   return (
-      <header>
-          <div className="header-content-container container">
-              <Link to="/">
-                  <h1 className="site-name">MeuSite</h1>
-              </Link>
-              <nav className="navbar">
-                  <NavLink to="/home" className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item" } >
-                      Início
-                  </NavLink>
-                  <NavLink to="/promotion" className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item" } >
-                      Promoção
-                  </NavLink>
-                  <NavLink to="/sub" className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item" } >
-                      Participar
-                  </NavLink>
-              </nav>
-          </div>
-      </header>
+    <header>
+      <div className="header-content-container container">
+        <nav className="navbar">
+          <NavLink to="/home"className={({ isActive }) =>isActive ? "menu-item menu-active" : "menu-item"}>
+            Início
+          </NavLink>
+          <NavLink to="/promotion"className={({ isActive }) =>isActive ? "menu-item menu-active" : "menu-item"}>
+            Produtos
+          </NavLink>
+          <NavLink to="/sub"className={({ isActive }) =>isActive ? "menu-item menu-active" : "menu-item"}>
+            Sobre nós
+          </NavLink>
+        </nav>
+
+        <Link to="/">
+        <img src={homImg} alt="Home Inicio" />
+        </Link>
+      </div>
+    </header>
   );
 }
