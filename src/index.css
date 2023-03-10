@@ -24,14 +24,18 @@ a, a:hover {
   margin: 0 auto;
 }
 
-.mb30 {
-  margin-bottom: 30px;
+.mb20 {
+  margin-bottom: 20px;
 }
 
-.mt30 {
-  margin-top: 30px;
+.mt20 {
+  margin-top: 20px;
 }
 
 body{
-  background-color: #d3d3d3;
+  background-color: #fff;
+}
+.styles-card-product{
+  font-size: 16px;
+  color: black;
 }
